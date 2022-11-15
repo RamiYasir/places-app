@@ -1,0 +1,20 @@
+version: '3'
+
+services: 
+  places-app: 
+    container_name: places
+    image: ryasir/places-app:latest
+    ports:
+      - 5001:80
+
+# Build image for places app
+# docker build . -t places-app:v2
+
+# look for images
+# docker images
+
+# run the image
+# docker run -p 5000:80 -d places-app:v2
+
+# check container logs
+# docker logs places
